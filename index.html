@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLX - Buy and Sell for free anywhere in Pakistan with OLX online classifieds</title>
+    <link rel="shortcut icon" href="./src/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" id="header">
+        <div id="header-menu">
+          <div class="">
+            <img src="./src/images/olx logo.png" class="logo" alt="" />
+          </div>
+          <div class="header-top-catogories">
+            <img src="./src/images/car.png" alt="" />
+          </div>
+
+          <div class="header-link">
+            <a href="#">MOTORS</a>
+          </div>
+          <div class="header-top-catogories">
+            <img src="./src/images/building.png" alt="" />
+          </div>
+
+          <div class="header-link">
+            <a href="#">PROPERTY</a>
+          </div>
+        </div>
+
+        <div id="sub-Menu">
+          <div class="logo-div">
+            <img src="./src/images/logo-black.png" class="logo-black" alt="" />
+          </div>
+          <div class="location-div">
+            <select name="" id="Location">
+              <option value="">Pakistan</option>
+              <option value="" class="Current-loc">Use Current Location</option>
+              <option value="" class="loc">Azad Kashmir, Pakistan</option>
+              <option value="" class="loc">Balochistan, Pakistan</option>
+              <option value="" class="loc">
+                Islamabad Capital Territory, Pakistan
+              </option>
+              <option value="" class="loc">Khyber Pakhtunkhwa, Pakistan</option>
+              <option value="" class="loc">Northern Areas, Pakistan</option>
+              <option value="" class="loc">Punjab, Pakistan</option>
+            </select>
+          </div>
+
+          <div class="search-div">
+            <input type="text" name="" id="search" placeholder="Find Cars, Mobile Phones and more..."/>
+            <button onclick="search()" class="search-btn"><img src="./src/images/magnifying-glass.png" alt=""></button>
+          </div>
+
+          <div class="login-div" id="login-div">
+            <a href="./signin.html" class="login" id="user-login"><input type="button" class="login" value="Login" id="signIn-link"/></a>
+              <nav>
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="user-sub-menu">
+                    <div class="user-info">
+                      <img src="./src/images/userprofile.png" alt="user-profile" class="profile-img">
+                      <div class="userprofile-info">
+                        <p class="greeting">Hello,</p>
+                        <h2 id="username-info"></h2>
+                        <a href="./src/dashboard/dasboard.html"><span class="view-profile"><u>View and edit your profile</u></span></a>
+                      </div>
+                    </div>
+
+                    <div class="userprofile-info">
+                      <div class="dropdown-link-div">
+                        <a href="./src/myAds/myAds.html" class="user-sub-menu-link">
+                          <img src="https://www.olx.com.pk/assets/iconMyAds_noinline.81f6b0cc8a3d16d363fb142e1489d035.svg" alt="My ads" class="drop-down-icon">
+                          <p>My ads</p>
+                        </a>
+                      </div>
+
+                      <div class="dropdown-link-div">
+                        <a href="#" class="user-sub-menu-link">
+                          <img src="./src/images/heart.png" alt="Favourite & Saved searches" class="drop-down-icon">
+                          <p>Favourite & Saved searches</p>
+                        </a>
+                      </div>
+
+                      <div class="dropdown-link-div">
+                        <a href="#" class="user-sub-menu-link">
+                          <img src="https://www.olx.com.pk/assets/iconBusinessPackages_noinline.64a7db94ef2eb1776d43916ce82b1a40.svg" alt="Buy business packages" class="drop-down-icon">
+                          <p>Buy business packages</p>
+                        </a>
+                      </div>
+
+                      <div class="dropdown-link-div">
+                        <a href="./src/myAds/myAds.html" class="user-sub-menu-link">
+                          <img src="https://www.olx.com.pk/assets/iconBoughtPackages_noinline.b29b2b61c39def95f4bf58ac5b6dbb59.svg" alt="Bought Packages & Billing" class="drop-down-icon">
+                          <p>Bought Packages & Billing</p>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="userprofile-info">
+                      <div class="dropdown-link-div">
+                        <a href="./src/myAds/myAds.html" class="user-sub-menu-link">
+                          <img src="https://www.olx.com.pk/assets/iconHelp_noinline.f07d255148323e318808a50c52097d0c.svg" alt="Help" class="drop-down-icon">
+                          <p>Help</p>
+                        </a>
+                      </div>
+
+                      <div class="dropdown-link-div">
+                        <a href="#" class="user-sub-menu-link">
+                          <img src="https://www.olx.com.pk/assets/iconFilters_noinline.0aa1e7bd623dcbcc065196fa3ccba789.svg" alt="Setting" class="drop-down-icon">
+                          <p>Setting</p>
+                        </a>
+                      </div>
+
+                      <div class="dropdown-link-div" id="logout-btn">
+                        <a href="./src/myAds/myAds.html" class="user-sub-menu-link">
+                          <img src="https://www.olx.com.pk/assets/iconLogout_noinline.9da9ed94dfe84e900cc1ae3198b0375b.svg" alt="Logout" class="drop-down-icon">
+                          <p>Logout</p>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </nav>
+          </div>
+
+          <!-- 
+            
+           -->
+
+          <div class="sell-div">
+            <input type="button" class="sell" value="Sell" onclick="window.location.href = './src/postAd/addFile/addFiles.html'"/>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="category-menu">
+        <header>
+          <nav>
+            <ul class="nav_list">
+              <li class="nav_items dropdown">
+                <a href="#" class="nav_links dropdown_link"
+                  >All Categories
+                  <i class="bx bxs-chevron-down dropdown_icon"></i
+                ></a>
+                <div class="megamenu">
+                  <ul class="content">
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Mobiles</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Mobile Phones</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Accessories</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Smart Watches</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Tablets</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Vehicles</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Cars</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Cars Accessories</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Spare Parts</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Buses, Vans & Trucks</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Rickshaw & Chingchi</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Tractors & Trailers</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Cars on Installments</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Vehicles</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Boats</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Property for Sale</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Land & Plots</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Houses</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Apartments & Flats</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Shops - Offices - Commercial Space</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Portions & Floors</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Property for Rent</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Houses</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Portions & Floors</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Apartments & Flats</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Shops - Offices - Commercial Space</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Rooms</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Roommates & Paying Guests</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Vacation Rentals - Guest Houses</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Land & Plots</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title"
+                        >Electronics & Home Appliances</a
+                      >
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">TV - Video - Audio</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">AC & Coolers</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Home Appliances</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Generators, UPS & Power Solutions</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Cameras & Accessories</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Kitchen Appliances</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Fridges & Freezers</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Games & Entertainment</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Washing Machines & Dryers</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="content">
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Bikes</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Motorcycles</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Bicycles</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Spare Parts</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Bikes Accessories</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">ATV & Quads</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Scooters</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title"
+                        >Business, Industrial & Agriculture</a
+                      >
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Business & Industry</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Food & Restaurants</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Medical & Pharma</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Trade & Industrial Machinery</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Construction & Heavy Machinery</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Business for Sale</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Agriculture</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Services</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Services</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Tuitions & Academies</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Car Rental</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Home & Office Repair</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Travel & Visa</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Domestic Help</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Web Development</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Electronics & Computer Repair</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Drivers & Taxi</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Movers & Packers</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Consultancy Services</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Construction Services</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Health & Beauty</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Event Services</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Farm & Fresh Food</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Video & Photography</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Architecture & Interior Design</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Car Services</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Catering & Restaurant</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Renting Services</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Camera Installation</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Tailor Services</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Insurance Services</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="content">
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Jobs</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Online</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Jobs</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Part Time</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Marketing</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Education</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Sales</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Customer Service</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Domestic Staff</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Restaurants & Hospitality</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">IT & Networking</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Medical</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Accounting & Finance</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Graphic Design</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Delivery Riders</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Hotels & Tourism</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Content Writing</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Clerical & Administration</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Manufacturing</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Real Estate</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Human Resources</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Security</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Engineering</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Advertising & PR</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Internships</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Architecture & Interior Design</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Animals</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Hens</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Parrots</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Cats</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Dogs</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Birds</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Pigeons</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Pet Food & Accessories</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Livestock</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Fish</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Finches</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Rabbits</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Doves</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Animals</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Ducks</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Peacocks</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Fertile Eggs</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Horses</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="content">
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Furniture & Home Decor</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Sofa & Chairs</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Beds & Wardrobes</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Household Items</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Tables & Dining</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Home Decoration</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Office Furniture</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Garden & Outdoor</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Painting & Mirrors</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Curtains & Blinds</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Rugs & Carpets</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Bathroom Accessories</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Fashion & Beauty</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Clothes</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Watches</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Wedding</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Footwear</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Skin & Hair</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Jewellery</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Bags</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Makeup</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Fashion Accessories</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Fashion</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Fragrance</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Books, Sports & Hobbies</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Other Hobbies</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Gym & Fitness</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Sports Equipment</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Books & Magazines</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Musical Instruments</a>
+                      </div>
+                    </li>
+
+                    <li class="megamenu_item header_megamenu">
+                      <a href="#" class="title">Kids</a>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Toys</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Kids Accessories</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Kids Furniture</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Kids Vehicles</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Baby Gear</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Swings & Slides</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Kids Clothing</a>
+                      </div>
+                    </li>
+                    <li class="megamenu_item">
+                      <div class="megamenu_link">
+                        <a href="#">Bath & Diapers</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav_items">
+                <a href="#" class="nav_links">Mobile Phones</a>
+              </li>
+              <li class="nav_items"><a href="#" class="nav_links">Cars</a></li>
+              <li class="nav_items">
+                <a href="#" class="nav_links">Motorcycles</a>
+              </li>
+              <li class="nav_items">
+                <a href="#" class="nav_links">Houses</a>
+              </li>
+              <li class="nav_items">
+                <a href="#" class="nav_links">TV - Video - Audio</a>
+              </li>
+              <li class="nav_items">
+                <a href="#" class="nav_links">Tablets</a>
+              </li>
+              <li class="nav_items">
+                <a href="#" class="nav_links">Land & Plots</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="banner-div">
+        <img
+          src="https://images.olx.com.pk/thumbnails/383867403-800x600.webp"
+          class="banner"
+          alt=""
+        />
+      </div>
+
+      <div class="banner-div">
+        <div class="" align="center">
+          <img
+            src="https://tpc.googlesyndication.com/simgad/7446493822861503541?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qm0PTmL1URdEYEsyE5uhpIuL7Vc3w"
+            class="ad-1"
+            alt=""
+          />
+        </div>
+      </div>
+
+        <div id="category-div">
+          <h4 class="all-category">All categories</h4>
+        </div>
+
+      <div class="tags-div">
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/mobiles.8c768c96bfde33f18fcf5af2a8b9cf71.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Mobiles</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/vehicles.29fb808d5118f0db56f68a39ce5392e2.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Vehicles</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/property-for-sale.e3a00dbfdaa69fe5f713665f1069502f.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Property For Sale</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/property-for-rent.8436595fbaa90d47f0178006f57090a8.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Property For Rent</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/bikes.4dcd02c49b2b83aa5b4d629d1e2b383e.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Bikes</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/services.dc6aef196c0403dc61b0ee813f66fa5b.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Services</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/jobs.79e6136dda02111cf8e7afe26b9e0f93.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Jobs</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/animals.62d396e85f7523dbc8ff23889fdd5c31.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Animals</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/furniture-home-decor.66bcf157a53ea4c736a5b0af41219475.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Furniture & Home Decor</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="category-tag-div" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/fashion-beauty.dd2cf7638c29b0e5c084a6673dd94dd7.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Fashion & Beauty</h5>
+          </div>
+        </a>
+
+      </div>
+      
+      <div class="tags-div-1">
+        
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="other-tags" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/books-sports-hobbies.6fee8d841b332d65a10f050f4a2ee1c8.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Books, Sports <br> & Hobbies</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="other-tags" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/business-industrial-agriculture.704a6ffb9081bc94b11c102cc613670f.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Business,<br> Industrial &<br> Agriculture</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="other-tags" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/electronics-home-appliances.46e034dd8adca44625c2c70e4d1b5984.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Electronics & <br> Home <br>Appliances</h5>
+          </div>
+        </a>
+
+        <a href="./src/categoryAds/categoryAds.html">
+          <div class="other-tags" align="center">
+            <img
+              src="https://www.olx.com.pk/assets/kids.cd8d8864804f1c35dd6a7df68268a48d.png"
+              class="tags"
+              alt=""
+            />
+            <h5 class="category-div-heading">Kids</h5>
+          </div>
+        </a>
+
+      </div>
+
+        <div id="category-div">
+          <h4 class="all-category">More in recent ads</h4>
+        </div>
+
+        <div class="mobile-tags" id="mobile-tags">
+
+        </div>
+
+
+        <!-- <div id="category-div">
+            <h4 class="all-category">Mobile Phones</h4>
+        </div> -->
+
+      <!-- <div class="mobile-tags">
+        
+      </div> -->
+
+        <!-- <div id="category-div">
+            <h4 class="all-category">Cars</h4>
+        </div> -->
+
+      <!-- <div class="mobile-tags">
+        <div class="mobile">
+          <img
+            src="https://images.olx.com.pk/thumbnails/363557323-240x180.webp"
+            class="mobile-installment-img"
+            alt=""
+          />
+          <h4><strong>Rs 6,450,000</strong></h4>
+          <p>Elantra whitee color like new alloy rim and leather seat</p>
+          <p id="speedometer">
+            &nbsp; &nbsp; &nbsp; &nbsp;14,000 km <strong>.</strong> 2007
+          </p>
+          <h6>Malir Halt,Karachi</h6>
+          <p>2 days ago</p>
+        </div>
+
+        <div class="mobile">
+          <img
+            src="https://images.olx.com.pk/thumbnails/379881226-240x180.webp"
+            class="car-img"
+            alt=""
+          />
+          <h4><strong>Rs 925,000</strong></h4>
+          <p>
+            Mini Pajero jeep total original hai touchup nhi hai engine change
+            hai
+          </p>
+          <p id="speedometer">
+            &nbsp; &nbsp; &nbsp; &nbsp;137,000 km <strong>.</strong> 1995
+          </p>
+          <h6>Khokarapar, Karachi</h6>
+          <p>2 week ago</p>
+        </div> -->
+
+        <!-- <div class="mobile">
+          <img
+            src="https://images.olx.com.pk/thumbnails/377325027-240x180.webp"
+            class="car-img"
+            alt=""
+          />
+          <h4><strong>Rs 1,700,000</strong></h4>
+          <p>Hijet Cargo 2013/2018</p>
+          <p id="speedometer">
+            &nbsp; &nbsp; &nbsp; &nbsp;150,000 km <strong>.</strong> 2013
+          </p>
+          <h6 class="bottom-mobile">Kala Board,Karachi</h6>
+          <p class="bottom-mobile">3 weeks ago</p>
+        </div> -->
+
+        <!-- <div class="mobile">
+          <img
+            src="https://images.olx.com.pk/thumbnails/381503753-240x180.webp"
+            class="mobile-img"
+            alt=""
+          />
+          <h4><strong>Rs 15,500,000</strong></h4>
+          <p>Toyota Fortuner 4x4</p>
+          <p id="speedometer">
+            &nbsp; &nbsp; &nbsp; &nbsp;2,600 km <strong>.</strong> 2021
+          </p>
+          <h6 class="bottom-mobile">Mohabat Nagar, Karachi</h6>
+          <p class="bottom-mobile">6 days ago</p>
+        </div>
+      </div> -->
+
+      <div class="footer-items">
+        <div class="">
+          <img src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp" class="offer" alt=""/>
+        </div>
+
+        <div class="app-info">
+          <h3>TRY THE OLX APP</h3>
+          <h5>
+            Buy, sell and find just about anything using the app on your mobile.
+          </h5>
+        </div>
+
+        <div class="app">
+          <p><strong>GET YOUR APP TODAY</strong></p>
+          <div class="store-div">
+            <img
+            src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg"
+            class="appstores"
+            alt=""
+          />
+          <img
+            src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg"
+            class="appstores"
+            alt=""
+          />
+          <img
+            src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg"
+            class="appstores"
+            alt=""
+          />
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-footer">
+        <div class="footer-tags">
+          <p><strong>POPULAR CATEGORIES</strong></p>
+          <a href="#" class="links">Cars</a>
+          <a href="#" class="links">Flats for rent</a>
+          <a href="#" class="links">Mobile Phones</a>
+          <a href="#" class="links">Jobs</a>
+        </div>
+
+        <div class="footer-tags">
+          <p><strong>TRENDING SEARCHES</strong></p>
+          <a href="#" class="links">Bikes</a>
+          <a href="#" class="links">Watches</a>
+          <a href="#" class="links">Books</a>
+          <a href="#" class="links">Dogs</a>
+        </div>
+
+        <div class="footer-tags">
+          <p><strong>ABOUT US</strong></p>
+          <a href="#" class="links">About Dubizzle Group</a>
+          <a href="#" class="links">OLX Blog</a>
+          <a href="#" class="links">Contact Us</a>
+          <a href="#" class="links">OLX for Businesses</a>
+        </div>
+
+        <div class="footer-tags">
+          <p><strong>OLX</strong></p>
+          <a href="#" class="links">Help</a>
+          <a href="#" class="links">Sitemap</a>
+          <a href="#" class="links">Terms of use</a>
+          <a href="#" class="links">Privacy Policy</a>
+        </div>
+
+        <div class="">
+          <p><strong>FOLLOW US</strong></p>
+          <a href="#"
+            ><img
+              src="https://www.olx.com.pk/assets/iconFacebook_noinline.773db88c5b9ee5aaab365e61cdb750da.svg"
+              class="social"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://www.olx.com.pk/assets/iconTwitter_noinline.6037fa7d9a7b9d6408fb1b3d70524b97.svg"
+              class="social"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://www.olx.com.pk/assets/iconYoutube_noinline.c85bd6801ec83d6a3b498059550bef26.svg"
+              class="social"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://www.olx.com.pk/assets/iconInstagram_noinline.d7d5811ebc44e03a674c8d0b5ff3f232.svg"
+              class="social"
+              alt=""
+          /></a>
+          <br />
+          <img
+            src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg"
+            class="appstores-1"
+            alt=""
+          />
+          <img
+            src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg"
+            class="appstores-1"
+            alt=""
+          />
+          <img
+            src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg"
+            class="appstores-1"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-tags-1">
+          <p><strong>Free Classifieds in Pakistan</strong></p>
+          &nbsp;
+          <p>.</p>
+          <p>&copy; 2006-2023 OLX</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

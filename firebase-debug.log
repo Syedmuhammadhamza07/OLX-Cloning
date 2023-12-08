@@ -1,0 +1,87 @@
+[debug] [2023-12-08T11:15:32.311Z] ----------------------------------------------------------------------
+[debug] [2023-12-08T11:15:32.315Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-08T11:15:32.316Z] CLI Version:   12.8.1
+[debug] [2023-12-08T11:15:32.316Z] Platform:      win32
+[debug] [2023-12-08T11:15:32.316Z] Node Version:  v20.9.0
+[debug] [2023-12-08T11:15:32.316Z] Time:          Fri Dec 08 2023 16:15:32 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-12-08T11:15:32.316Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-08T11:15:32.404Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-08T11:15:32.405Z] > authorizing via signed-in user (syedmuhammadhamza2019@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\web development\Saylani WMA-BA#10\my olx
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-08T11:15:40.609Z] Using project from CLI flag: my-olx-bad77
+[debug] [2023-12-08T11:15:40.611Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-olx-bad77 [none]
+[debug] [2023-12-08T11:15:41.391Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-olx-bad77 200
+[debug] [2023-12-08T11:15:41.391Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-olx-bad77 {"projectId":"my-olx-bad77","projectNumber":"666503542444","displayName":"Firebase-Authentication","name":"projects/my-olx-bad77","resources":{"hostingSite":"my-olx-bad77","storageBucket":"my-olx-bad77.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bac426ba-84ed-4ab0-a858-3fe48ffa8d99"}
+[info] i  Using project my-olx-bad77 (Firebase-Authentication) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] i  Skipping write of build/404.html 
+[debug] [2023-12-08T11:15:56.072Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-08T11:16:05.514Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-08T11:16:05.514Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming F:\web development\Saylani WMA-BA#10\my olx is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=213135391&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-12-08T11:17:31.661Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-12-08T11:17:31.662Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-12-08T11:17:32.458Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-12-08T11:17:32.458Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-12-08T11:17:32.488Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-12-08T11:17:33.273Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-12-08T11:17:33.273Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Syedmuhammadhamza07","id":143732317,"node_id":"U_kgDOCJEuXQ","avatar_url":"https://avatars.githubusercontent.com/u/143732317?v=4","gravatar_id":"","url":"https://api.github.com/users/Syedmuhammadhamza07","html_url":"https://github.com/Syedmuhammadhamza07","followers_url":"https://api.github.com/users/Syedmuhammadhamza07/followers","following_url":"https://api.github.com/users/Syedmuhammadhamza07/following{/other_user}","gists_url":"https://api.github.com/users/Syedmuhammadhamza07/gists{/gist_id}","starred_url":"https://api.github.com/users/Syedmuhammadhamza07/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Syedmuhammadhamza07/subscriptions","organizations_url":"https://api.github.com/users/Syedmuhammadhamza07/orgs","repos_url":"https://api.github.com/users/Syedmuhammadhamza07/repos","events_url":"https://api.github.com/users/Syedmuhammadhamza07/events{/privacy}","received_events_url":"https://api.github.com/users/Syedmuhammadhamza07/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":6,"public_gists":0,"followers":0,"following":0,"created_at":"2023-08-31T15:12:01Z","updated_at":"2023-11-16T14:47:47Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":45,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Syedmuhammadhamza07 
+[info] 
+[debug] [2023-12-08T11:19:24.590Z] >>> [apiv2][query] GET https://api.github.com/repos/(Syedmuhammadhamza07/OLX)/actions/secrets/public-key type=owner
+[debug] [2023-12-08T11:19:25.406Z] <<< [apiv2][status] GET https://api.github.com/repos/(Syedmuhammadhamza07/OLX)/actions/secrets/public-key 404
+[debug] [2023-12-08T11:19:25.407Z] <<< [apiv2][body] GET https://api.github.com/repos/(Syedmuhammadhamza07/OLX)/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-08T11:22:46.384Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-08T11:22:47.296Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-08T11:22:47.297Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
